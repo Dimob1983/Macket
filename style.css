@@ -87,41 +87,47 @@ body {
 
 .menu__button_burger {
     margin-left: 16px;
+    background-image: url('svg/icon.svg');
 }
 
 .menu__button_call-me {
     margin-left: auto;
     margin-right: 16px;
     display: none;
+    background-image: url('svg/call.svg');
 }
 
 .menu__button_chat {
     margin-right: 16px;
     display: none;
+    background-image: url('svg/chat.svg');
 }
 
 .menu__button_profile {
     display: none;
+    background-image: url('svg/profile.svg');
 }
 
 .menu__button_repair {
     margin-right: 16px;
+    background-image: url('svg/tools.svg');
 
 }
 
 .menu__button_checkstatus {
     margin-right: 16px;
+    background-image: url('svg/search.svg');
 }
 
 
 /*Наполнение сайта в мэйн*/
-.container {
+.first-block {
     display: flex;
     flex-direction: column;
     background-color: #F8F8F8;
 }
 
-.container__title-button {
+.first-block__title-button {
     display: inline-flex;
     font-family: "TT-Lakes";
     font-weight: bold;
@@ -135,16 +141,16 @@ body {
     height: 40px;
 }
 
-.container__title-button-pc {
+.first-block__title-button-pc {
     display: none;
 }
 
 
 
 .slide-menu {
-    margin-top: 24px;
-    margin-bottom: 12px;
-    margin-left: 16px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    margin-left: -16px;
     display: flex;
     overflow: scroll;
 
@@ -155,6 +161,7 @@ body {
 }
 
 .slide-menu__slide-button {
+    display: flex;
     font-family: "TT-Lakes";
     font-size: 16px;
     font-weight: 500;
@@ -166,11 +173,15 @@ body {
     background-color: white;
     border: 0;
     background-color: #F8F8F8;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #F8F8F8;
 }
 
 .slide-menu__slide-button:first-child {
     display: none;
 }
+
 
 .slide-menu__slide-button:nth-child(2) {
     border: 2px solid #B8FFEC;
@@ -179,8 +190,7 @@ body {
 }
 
 
-
-.container__info {
+.first-block__info {
     font-family: "TT-Lakes";
     font-size: 14px;
     line-height: 20px;
@@ -192,11 +202,11 @@ body {
     height: 100px;
 }
 
-.container__info::-webkit-scrollbar {
+.first-block__info::-webkit-scrollbar {
     width: 0;
 }
 
-.container__read-more-button {
+.first-block__read-more-button {
     display: flex;
     justify-content: end;
     margin-top: 12px;
@@ -234,7 +244,7 @@ body {
         min-width: 768px;
     }
 
-    .container__title-button-pc {
+    .first-block__title-button-pc {
         display: none;
     }
 
@@ -269,7 +279,7 @@ body {
     }
 
     /*Наполнение сайта в мэйн*/
-    .container__content {
+    .first-block__content {
         display: flex;
         justify-content: space-evenly;
 
@@ -280,7 +290,7 @@ body {
         height: 208px;
     }
 
-    .container__text-and-button {
+    .first-block__text-and-button {
         height: 208px;
     }
 
@@ -298,13 +308,13 @@ body {
         background-color: #F8F8F8;
     }
 
-    .container__title-button {
+    .first-block__title-button {
         display: none;
         margin-top: 0;
 
     }
 
-    .container__title-button-pc {
+    .first-block__title-button-pc {
         display: inline-flex;
         font-size: 28px;
         line-height: 40px;
@@ -362,7 +372,8 @@ body {
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
-
+        background-repeat: no-repeat;
+        background-position: right;
     }
 
     .menu__button_checkstatus {
@@ -377,12 +388,15 @@ body {
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
+        background-repeat: no-repeat;
+        background-position: right;
+        margin-left: 24px;
 
     }
 
 
     /*Наполнение сайта в мэйн*/
-    .container__text_no-tablet {
+    .first-block__text_no-tablet {
         display: inline-flex;
     }
 
@@ -390,20 +404,9 @@ body {
         margin-top: 0px;
     }
 
+
     .slide-menu__slide-button:first-child {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid #B8FFEC;
-        background-color: white;
-
-    }
-
-    .slide-menu__slide-button:nth-child(2) {
-        border: 0;
-        background-color: #F8F8F8;
-
-
     }
 
     .logo {
